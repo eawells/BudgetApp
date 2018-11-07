@@ -13,4 +13,4 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - "node_modules"
-      - run: ng test
+      - run: npm run test:ci
