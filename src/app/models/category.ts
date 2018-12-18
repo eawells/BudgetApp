@@ -1,4 +1,7 @@
 export class Category {
     name: string;
-    total: number;
+    totalBudgeted: number;
+    startDate: Date;
+    totalSpentSoFar: number;
+    totalAvailable: number;
 }
