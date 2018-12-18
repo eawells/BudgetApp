@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subbudget } from '../subbudget';
 
 @Component({
   selector: 'app-budget',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class BudgetComponent implements OnInit {
 
   totalLabel = 'Total Budget';
+  totalBudget = 400;
+
+  subbudget: Subbudget = {
+    name: 'Groceries',
+    amount: 200
+  }
   
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

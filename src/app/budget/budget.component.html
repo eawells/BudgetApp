@@ -1,4 +1,12 @@
 <h2>
   {{totalLabel}}
+  <input [(ngModel)]="totalBudget">
 </h2>
+
+<h3>{{totalLabel}} Details</h3>
+<div>
+  <h4>{{subbudget.name}}</h4>
+  <span>Budget Amount: </span>
+  <input [(ngModel)]="subbudget.amount" placeholder="amount">
+</div>
 
